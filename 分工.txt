@@ -1,0 +1,11 @@
+what does it take to be a nobel laureate?
+part 1
+`1. 出版的文献数(y) 得奖年份(x) —————— ly
+散点图+平均线 http://vis.pku.edu.cn/blog/%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%A5%96%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96/ http://vis.pku.edu.cn/blog/wp-content/uploads/2022/10/4-1024x832.png
+2. 流动 + 什么机构最多诺奖得主—— sankey流动图 ———— zm
+3. 国家 —— 有代码 https://zhuanlan.zhihu.com/p/260629701 圆形散点图+累积柱状图 ——————ly
+需要找到国家
+4. 得过诺奖是不是更容易再得到？https://datanews.caixin.com/2013/nobel/ arc diagram 弧形 ------ xy
+5. 诺奖得主的跨学科性 找出他发表了多少化学、物理、医学的文献 ternary plot + 年份动态 --- xy
+6. 出版（等了多少年）和得奖年份之间的差距 ———— zm
+-- x年份 y等了多少年（得奖-出版年份） 分布图displot
