@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chord Diagram</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <script>
+    // 准备数据
+    var data = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [9, 10, 11],
+      [12, 13, 14],
+      [15, 16, 17],
+      [18, 19, 20],
+      [21, 22, 23],
+      [24, 25, 26],
+      [27, 28, 29]
+    ];
+    
+    // 创建弦图布局
+    var chord = d3.chord().padAngle(0.05)(data);
+    
+    // 设置画布尺寸和边距
+    var width = 500;
+    var height = 500;
+    var margin = { top: 20, right: 20, bottom: 20, left: 20 };
+    
+    // 创建 SVG 元素
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
+    
+    // 绘制弦图
+    var ribbon = d3.ribbon()
+                   .radius(height / 2 - 20);
+    
+    svg.append("g")
+       .selectAll("path")
+       .data(chord)
+       .join("path")
+       .attr("d", ribbon)
+       .attr("fill", "steelblue")
+       .attr("opacity", 0.7);
+  </script>
+</body>
+</html>
