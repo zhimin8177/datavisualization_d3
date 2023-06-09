@@ -7,8 +7,8 @@ Visualization using Chord Diagram and Bar Chart:
 - chord.html is responsible for displaying the Chord Diagram.
 - barchart.html is responsible for displaying the Bar Chart.
 
-Data (in the data folder):
-dataverse_file: The original data.
-data_generating.ipynb: Notebook used to process the dataset and obtain the data for visualization.
+- data folder:  
+    dataverse_file: The original data.  
+    data_generating.ipynb: Notebook used to process the dataset and obtain the data for visualization.  
 
-js folder: Contains the main JavaScript code for the visualization.
+- js folder: Contains the main JavaScript code for the visualization.
